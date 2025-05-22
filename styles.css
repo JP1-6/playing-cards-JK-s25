@@ -1,0 +1,54 @@
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  height: 200px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  padding: 15px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.left {
+  align-self: flex-start;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d32f2f; /* deep red */
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #333;
+}
+
+.right {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1976d2; /* deep blue */
+}
